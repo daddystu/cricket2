@@ -1,0 +1,49 @@
+<%= form_for(@bowling_line) do |f| %>
+  <% if @bowling_line.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(@bowling_line.errors.count, "error") %> prohibited this bowling_line from being saved:</h2>
+
+      <ul>
+      <% @bowling_line.errors.full_messages.each do |msg| %>
+        <li><%= msg %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= f.label :innings_id %><br />
+    <%= f.text_field :innings_id %>
+  </div>
+  <div class="field">
+    <%= f.label :bowler_id %><br />
+    <%= f.text_field :bowler_id %>
+  </div>
+  <div class="field">
+    <%= f.label :overs %><br />
+    <%= f.text_field :overs %>
+  </div>
+  <div class="field">
+    <%= f.label :runs %><br />
+    <%= f.text_field :runs %>
+  </div>
+  <div class="field">
+    <%= f.label :maidens %><br />
+    <%= f.text_field :maidens %>
+  </div>
+  <div class="field">
+    <%= f.label :wickets %><br />
+    <%= f.text_field :wickets %>
+  </div>
+  <div class="field">
+    <%= f.label :no_balls %><br />
+    <%= f.text_field :no_balls %>
+  </div>
+  <div class="field">
+    <%= f.label :wides %><br />
+    <%= f.text_field :wides %>
+  </div>
+  <div class="actions">
+    <%= f.submit %>
+  </div>
+<% end %>

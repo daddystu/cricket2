@@ -1,0 +1,2 @@
+module BattingLinesHelper
+end

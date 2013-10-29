@@ -1,0 +1,37 @@
+<%= form_for(@point) do |f| %>
+  <% if @point.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(@point.errors.count, "error") %> prohibited this point from being saved:</h2>
+
+      <ul>
+      <% @point.errors.full_messages.each do |msg| %>
+        <li><%= msg %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= f.label :match_id %><br />
+    <%= f.text_field :match_id %>
+  </div>
+  <div class="field">
+    <%= f.label :team_id %><br />
+    <%= f.text_field :team_id %>
+  </div>
+  <div class="field">
+    <%= f.label :batting %><br />
+    <%= f.text_field :batting %>
+  </div>
+  <div class="field">
+    <%= f.label :bowling %><br />
+    <%= f.text_field :bowling %>
+  </div>
+  <div class="field">
+    <%= f.label :match %><br />
+    <%= f.text_field :match %>
+  </div>
+  <div class="actions">
+    <%= f.submit %>
+  </div>
+<% end %>

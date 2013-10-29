@@ -1,0 +1,21 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/Fixtures.html
+
+one:
+  innings_id: 
+  bowler_id: 
+  overs: 
+  runs: 
+  maidens: 
+  wickets: 
+  no_balls: 
+  wides: 
+
+two:
+  innings_id: 
+  bowler_id: 
+  overs: 
+  runs: 
+  maidens: 
+  wickets: 
+  no_balls: 
+  wides: 

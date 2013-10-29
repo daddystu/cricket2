@@ -1,0 +1,39 @@
+<h1>Listing batting_lines</h1>
+
+<table>
+  <tr>
+    <th>Innings</th>
+    <th>Batsman</th>
+    <th>Runs</th>
+    <th>Balls</th>
+    <th>Fours</th>
+    <th>Sixes</th>
+    <th>Is out</th>
+    <th>How out</th>
+    <th>Bowler</th>
+    <th></th>
+    <th></th>
+    <th></th>
+  </tr>
+
+<% @batting_lines.each do |batting_line| %>
+  <tr>
+    <td><%= batting_line.innings_id %></td>
+    <td><%= batting_line.batsman_id %></td>
+    <td><%= batting_line.runs %></td>
+    <td><%= batting_line.balls %></td>
+    <td><%= batting_line.fours %></td>
+    <td><%= batting_line.sixes %></td>
+    <td><%= batting_line.is_out %></td>
+    <td><%= batting_line.how_out %></td>
+    <td><%= batting_line.bowler %></td>
+    <td><%= link_to 'Show', batting_line %></td>
+    <td><%= link_to 'Edit', edit_batting_line_path(batting_line) %></td>
+    <td><%= link_to 'Destroy', batting_line, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+  </tr>
+<% end %>
+</table>
+
+<br />
+
+<%= link_to 'New Batting line', new_batting_line_path %>

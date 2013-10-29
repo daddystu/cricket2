@@ -1,0 +1,45 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <b>Innings:</b>
+  <%= @bowling_line.innings_id %>
+</p>
+
+<p>
+  <b>Bowler:</b>
+  <%= @bowling_line.bowler_id %>
+</p>
+
+<p>
+  <b>Overs:</b>
+  <%= @bowling_line.overs %>
+</p>
+
+<p>
+  <b>Runs:</b>
+  <%= @bowling_line.runs %>
+</p>
+
+<p>
+  <b>Maidens:</b>
+  <%= @bowling_line.maidens %>
+</p>
+
+<p>
+  <b>Wickets:</b>
+  <%= @bowling_line.wickets %>
+</p>
+
+<p>
+  <b>No balls:</b>
+  <%= @bowling_line.no_balls %>
+</p>
+
+<p>
+  <b>Wides:</b>
+  <%= @bowling_line.wides %>
+</p>
+
+
+<%= link_to 'Edit', edit_bowling_line_path(@bowling_line) %> |
+<%= link_to 'Back', bowling_lines_path %>

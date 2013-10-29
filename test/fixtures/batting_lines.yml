@@ -1,0 +1,23 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/Fixtures.html
+
+one:
+  innings_id: 
+  batsman_id: 
+  runs: 
+  balls: MyString
+  fours: 
+  sixes: 
+  is_out: false
+  how_out: MyString
+  bowler: MyString
+
+two:
+  innings_id: 
+  batsman_id: 
+  runs: 
+  balls: MyString
+  fours: 
+  sixes: 
+  is_out: false
+  how_out: MyString
+  bowler: MyString

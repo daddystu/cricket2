@@ -1,4 +1,38 @@
 Cricket::Application.routes.draw do
+  resources :bowling_lines
+
+
+  resources :batting_lines
+
+
+  resources :innings
+
+
+  resources :scorecards
+
+
+  resources :points
+
+
+  resources :match_types
+
+
+  resources :venues
+
+
+  resources :players
+
+
+  resources :teams
+
+
+  devise_for :users
+
+  resources :matches
+  root to: 'matches#index'
+
+  # root :to => "home"
+  
   # The priority is based upon order of creation:
   # first created -> highest priority.
 

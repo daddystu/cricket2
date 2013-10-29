@@ -1,0 +1,50 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <b>Innings:</b>
+  <%= @batting_line.innings_id %>
+</p>
+
+<p>
+  <b>Batsman:</b>
+  <%= @batting_line.batsman_id %>
+</p>
+
+<p>
+  <b>Runs:</b>
+  <%= @batting_line.runs %>
+</p>
+
+<p>
+  <b>Balls:</b>
+  <%= @batting_line.balls %>
+</p>
+
+<p>
+  <b>Fours:</b>
+  <%= @batting_line.fours %>
+</p>
+
+<p>
+  <b>Sixes:</b>
+  <%= @batting_line.sixes %>
+</p>
+
+<p>
+  <b>Is out:</b>
+  <%= @batting_line.is_out %>
+</p>
+
+<p>
+  <b>How out:</b>
+  <%= @batting_line.how_out %>
+</p>
+
+<p>
+  <b>Bowler:</b>
+  <%= @batting_line.bowler %>
+</p>
+
+
+<%= link_to 'Edit', edit_batting_line_path(@batting_line) %> |
+<%= link_to 'Back', batting_lines_path %>

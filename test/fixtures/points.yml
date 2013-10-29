@@ -1,0 +1,15 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/Fixtures.html
+
+one:
+  match_id: 
+  team_id: 
+  batting: 
+  bowling: 
+  match: 
+
+two:
+  match_id: 
+  team_id: 
+  batting: 
+  bowling: 
+  match: 
