@@ -4,7 +4,7 @@ class CreatePlayers < ActiveRecord::Migration
       t.string :name
       t.string :telephone
       t.string :picture
-      t.int :team_id
+      t.integer :team_id
       t.string :role
       t.string :status
 
